@@ -16,12 +16,10 @@ class Feedback extends Component {
     const {resources} = this.props
     const {emojis, loveEmojiUrl} = resources
     const {display, display2} = this.state
-    const classes1 = `sub-container ${display}`
-    const classes2 = `sub-container  ${display2}`
 
     return (
       <div className="main-container">
-        <div className={classes1}>
+        <div className={`sub-container ${display}`}>
           <h1 className="heading">
             How satisfied are you with our customer support performance?
           </h1>
@@ -39,7 +37,7 @@ class Feedback extends Component {
             ))}
           </ul>
         </div>
-        <div className={classes2}>
+        <div className={`sub-container  ${display2}`}>
           <img src={loveEmojiUrl} alt="love emoji" className="love-emoji" />
           <h1 className="thankyou">Thank You!</h1>
           <p className="description">
